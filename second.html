@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management Dashboard</h1>
+
+        <!-- Button to add new user -->
+        <button id="addUserBtn" class="btn">Add New User</button>
+
+        <!-- User list -->
+        <div id="user-list">
+            <ul id="userList"></ul>
+        </div>
+
+        <!-- User Form (for Add/Edit) -->
+        <div id="userForm" class="form-container">
+            <h2 id="formTitle">Add New User</h2>
+            <form id="userFormContent">
+                <input type="hidden" id="userId">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+
+                <button type="submit" class="btn">Save</button>
+                <button type="button" id="cancelBtn" class="btn">Cancel</button>
+            </form>
+        </div>
+
+        <!-- Error message -->
+        <div id="error-message" class="error"></div>
+    </div>
+
+    <script src="one.js"></script>
+</body>
+</html>
+ 
